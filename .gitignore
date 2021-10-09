@@ -1,0 +1,12 @@
+.env
+node_modules/
+_.env
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+dist/
+.idea/nodejs-api-server-boilerplate.iml

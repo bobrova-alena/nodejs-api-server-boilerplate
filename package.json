@@ -1,0 +1,54 @@
+{
+  "name": "nodejs-api-server-boilerplate",
+  "version": "0.1.0",
+  "main": "dist/server.js",
+  "description": "Nodejs api server boilerplate",
+  "author": "Bobrova Alena",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "watch": "cross-env MODE_ENV=development webpack --progress --color --mode development --watch",
+    "dev": "cross-env MODE_ENV=development webpack --progress --color --mode development",
+    "build": "webpack --progress --color --mode production",
+    "run:nodemon": "nodemon dist/server.js",
+    "watch:prod": "webpack --progress --color --mode production --watch",
+    "----------": "",
+    "lint:code": "eslint \"./src/**/*.ts?(x)\" --fix"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "3.6.9",
+    "mongodb-client-encryption": "^1.2.7",
+    "saslprep": "1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobrova-alena/nodejs-api-server-boilerplate"
+  },
+  "devDependencies": {
+    "@types/mongodb": "3.6.18",
+    "@types/express": "^4.17.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "circular-dependency-plugin": "^5.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "fork-ts-checker-webpack-plugin": "^6.2.10",
+    "nodemon": "^2.0.13",
+    "nodemon-webpack-plugin": "^4.5.2",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.3",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.3.2",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-stream": "^6.1.2"
+  }
+}
